@@ -31,7 +31,7 @@ public class game {
         System.exit(0);
     }
 
-    public int isSolved()
+    private int isSolved()
     {
         int maxDiscTotal = 0;
         int[] tower3 = towers[2].getTowerArray();
@@ -48,7 +48,7 @@ public class game {
         }
     }
 
-    public void printTowers()
+    private void printTowers()
     {
         int[] tower1 = towers[0].getTowerArray();
         int[] tower2 = towers[1].getTowerArray();
@@ -60,7 +60,7 @@ public class game {
         System.out.println("--- --- ---");
     }
 
-    public void printErrorMessage(int selection) {
+    private void printErrorMessage(int selection) {
         switch (selection) {
             case 1:
                 System.out.println("tower 1 has no discs to move");
@@ -73,7 +73,7 @@ public class game {
         }
     }
 
-    public void moveDisc(int towerSelection1, int towerSelection2) {
+    private void moveDisc(int towerSelection1, int towerSelection2) {
         int tower1 = towerSelection1 - 1;
         int tower2 = towerSelection2 - 1;
         boolean tower1NotEmpty = towers[tower1].getTowerStatus() == tower.towerState.EMPTY;

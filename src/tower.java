@@ -66,7 +66,7 @@ public class tower
         return towerState.READY;
     }
 
-    public void fillTower(int fillType)
+    private void fillTower(int fillType)
     {
         if(fillType == 1)
         {
