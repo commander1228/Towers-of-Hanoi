@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner inputs = new Scanner (System.in);
+        System.out.println("Welcome to the Towers Of Hanoi by Kian Wheeler");
+        System.out.println("The objective of the towers of hanoi game is to move all of the discs on the leftmost tower to the rightmost tower");
+        System.out.println("the discs however can only be placed on a tower if it is smaller than any currently on a tower or the only one being placed on a tower");
+        System.out.println("to move a disc to a different tower simply type in the number of each tower and press enter");
+        game towersOfHanoi = new game(3);
+        towersOfHanoi.startGame();
+    }
+}
+//objects towers and discs
+//disc simply keeps track of the size of the disc
+//tower keep track of discs inside of it and what the topmost disc it has and disc placing logic
+//make function to populate game and add original amount of discs for now going to just start with 3
+//game logic function
