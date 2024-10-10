@@ -11,8 +11,3 @@ public class Main {
         towersOfHanoi.startGame();
     }
 }
-//objects towers and discs
-//disc simply keeps track of the size of the disc
-//tower keep track of discs inside of it and what the topmost disc it has and disc placing logic
-//make function to populate game and add original amount of discs for now going to just start with 3
-//game logic function
